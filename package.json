@@ -1,0 +1,13 @@
+{
+  "name": "zentype",
+  "version": "1.0.0",
+  "description": "minimalistic typing test website",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i input.css -o output.css ",
+    "watch": "npx @tailwindcss/cli -i input.css -o output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.0.6"
+  }
+}
