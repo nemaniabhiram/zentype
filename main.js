@@ -1,4 +1,3 @@
-// Add this at the beginning of main.js
 // Listen for system color scheme changes
 const colorSchemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 colorSchemeMediaQuery.addEventListener('change', handleColorSchemeChange);
@@ -11,7 +10,6 @@ function handleColorSchemeChange(mediaQuery) {
   // You could also set a cookie here to remember the preference
 }
 
-// Rest of the existing main.js code...
 // Get document elements
 const textDisplay = document.querySelector('#text-display');
 const inputField = document.querySelector('#input-field');
@@ -302,3 +300,10 @@ function getCookie(cname) {
   }
   return '';
 }
+
+// Attach event listeners once DOM is ready (module executes after HTML parse)
+
+document.getElementById('redo-button')?.addEventListener('click', (e) => setText(e));
+
+document.querySelectorAll('#time-count > span[data-time]')
+  .forEach(el => el.addEventListener('click', () => setTimeCount(Number(el.dataset.time))));

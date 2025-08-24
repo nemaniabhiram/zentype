@@ -106,13 +106,13 @@
       <div id="left-wing">
         <!-- Only time-based controls remain -->
         <span id="time-count">
-          <span id="tc-15" onclick="setTimeCount(15)" class="cursor-pointer">15</span>
-          <text> / </text>
-          <span id="tc-30" onclick="setTimeCount(30)" class="cursor-pointer">30</span>
-          <text> / </text>
-          <span id="tc-60" onclick="setTimeCount(60)" class="cursor-pointer">60</span>
-          <text> / </text>
-          <span id="tc-120" onclick="setTimeCount(120)" class="cursor-pointer">120</span>
+          <span id="tc-15" class="cursor-pointer" data-time="15">15</span>
+           / 
+          <span id="tc-30" class="cursor-pointer" data-time="30">30</span>
+           / 
+          <span id="tc-60" class="cursor-pointer" data-time="60">60</span>
+           / 
+          <span id="tc-120" class="cursor-pointer" data-time="120">120</span>
         </span>
       </div>
       <div id="right-wing">WPM: XX / ACC: XX</div>
@@ -123,7 +123,7 @@
         <input id="input-field" type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"
           tabindex="1"
           class="w-full border px-4 py-1 rounded text-lg focus:outline-none focus:border-highlight" />
-        <button id="redo-button" onclick="setText(event)" tabindex="2"
+        <button id="redo-button" tabindex="2"
           class="ml-3 border-none px-4 py-1 rounded text-lg cursor-pointer">
           redo
         </button>
